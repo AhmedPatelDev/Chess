@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+D:\Workspaces\Work In Progress\Chess\.metadata\.plugins\org.eclipse.jdt.core
+373884090.index
+2823657250.index
+1865797976.index

@@ -1,0 +1,35 @@
+package me.ix.chess.piece.pieces;
+
+import java.awt.Color;
+import java.awt.Point;
+import java.util.ArrayList;
+
+import me.ix.chess.board.Board;
+import me.ix.chess.piece.Piece;
+import me.ix.chess.piece.PieceType;
+
+public class Rook extends Piece {
+
+	public Rook(int x, int y, Color color) {
+		super(PieceType.ROOK, x, y, color, "images/rook");
+	}
+	
+	@Override
+	public ArrayList<Point> getLegalMoves(Board b) {
+		ArrayList<Point> points = new ArrayList<Point>();
+		
+		int oldX = this.getPos().x;
+		int oldY = this.getPos().y;
+		
+		for(int x = oldX; x > 8; x++) {
+			for(Piece piece : b.pieces) {
+				if(piece.getPos().x == x && piece.getPos().y == oldY) {
+					
+				}
+			}
+		}
+		
+		return points;
+	}
+	
+}
